@@ -1,0 +1,19 @@
+ARBOL RAIZ 
+CARPETA CS/
+│
+├── config/
+│   └── settings.py          # Configuración de MongoDB, credenciales y parámetros de la app
+│
+├── database/
+│   └── mongo_manager.py     # Gestión de conexiones, logins y logs de entrada/salida de clientes
+│
+├── modules/
+│   ├── network_scanner.py   # Detección de interfaces Wi-Fi, análisis de IP y escáner de puertos
+│   ├── disk_analyzer.py     # Detección de discos, conmutación entre unidades y búsqueda de archivos
+│   └── process_monitor.py   # Inspección de procesos activos y búsqueda de patrones de malware
+│
+├── ui/
+│   └── gui_main.py          # Interfaz gráfica principal con CustomTkinter (modo oscuro / cyberpunk)
+│
+├── main.py                  # Punto de entrada principal para ejecutar la suite
+└── requirements.txt         # Lista de dependencias (customtkinter, pymongo, psutil, etc.)

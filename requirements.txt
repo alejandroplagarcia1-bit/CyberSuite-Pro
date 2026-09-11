@@ -1,0 +1,36 @@
+requirements.txt
+customtkinter
+pymongo
+psutil
+
+
+
+#Módulo de Discos: 
+Usa la librería psutil para consultar directamente al kernel de Windows las unidades montadas, 
+calcula el espacio en bytes en tiempo real y usa la librería os para hacer un recorrido físico archivo por archivo 
+sobre tu disco o pendrive. Si un archivo .exe o .bat aparece en la lista, es porque está realmente ahí.
+
+#Escáner de Puertos: 
+Utiliza la librería nativa socket para abrir conexiones de red reales contra la dirección IP que le indiques. 
+Si dice que el puerto 80 o 27017 está abierto, es porque realmente envió un paquete TCP y el servidor le respondió.
+
+#Inspector de Procesos: 
+Lee los identificadores de proceso (PID) y el consumo de memoria RAM reales del Administrador de Tareas de Windows. 
+Si cierras un programa en tu PC y vuelves a escanear, el proceso desaparecerá de la lista.
+
+#Módulo de Base de Datos: 
+Se conecta de forma directa a una instancia local de MongoDB para insertar y consultar documentos reales de auditoría.
+Si MongoDB no está corriendo en tu equipo, la app lo detecta dinámicamente y conmuta al modo offline.
+
+#Todo lo que muestra la consola interna son lecturas en vivo extraídas directamente del hardware 
+#la red y la memoria del sistema.
+
+
+
+
+#sobre el programa:
+
+En Ordenadores (Windows): Funcionará perfectamente. 
+Al abrir el ejecutable en cualquier PC o laptop con Windows, la aplicación analizará 
+el disco duro, la red y los procesos de ese equipo en específico donde se está ejecutando.
+
